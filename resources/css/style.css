@@ -75,13 +75,12 @@ nav span{
   height: 3.5rem;
 }
 
-/*Sub-Sections*/
-.offering {
+/*icons*/
+.icons {
   display: flex;
   justify-content: center;
 }
 
-/*icons*/
 .icon {
   display: flex;
   flex-direction: column;
@@ -100,4 +99,54 @@ nav span{
 
 .paper img {
   width: 3.5rem;
+}
+
+/*Store Information*/
+.storeinfo {
+  display: flex;
+  justify-content: space-between;
+  max-width: 960px;
+  margin: auto;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 35%;
+  margin-top: 3rem;
+  margin-right: 5%;
+  margin-bottom: 5rem;
+}
+
+.heading {
+  background-color: cadetblue;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  max-width: 10rem;
+  height: 1.5rem;
+}
+
+.info p {
+  padding-top: 1rem;
+}
+
+/*Footer*/
+.footerinfo {
+  max-width: 960px;
+  margin: auto;
+}
+
+footer {
+  background-color: azure;
+  padding-top: 4rem;
+  padding-left: 4rem;
+  padding-bottom: 4rem;
+}
+
+footer img {
+  height: 1.5rem;
+  padding-right: 1rem;
 }
