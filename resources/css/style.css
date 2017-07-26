@@ -18,8 +18,10 @@ div {
 /*Header*/
 .header {
   background-image: url(/Users/thomasbishop/Documents/Projects/TortoiseshellOptics/resources/images/glasses-bg.png);
-  height: 50rem;
+  height: 30rem;
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   padding-top: 1rem;
 }
 
@@ -62,7 +64,7 @@ nav span{
 .bannertxt {
   display: flex;
   align-items: center;
-  margin-top: 15rem;
+  margin-top: 10rem;
   background-color: white;
   color: black;
   font-size: 2rem;
@@ -70,6 +72,32 @@ nav span{
   font-weight: bold;
   line-height: 1.2;
   padding: 1.5rem 5rem;
-  width: 26rem;
   height: 3.5rem;
+}
+
+/*Sub-Sections*/
+.offering {
+  display: flex;
+  justify-content: center;
+}
+
+/*icons*/
+.icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  height: 8rem;
+  Width: 5rem;
+  margin: 3rem;
+}
+
+.icon img {
+  width: 5rem;
+  margin-bottom: 1rem;
+}
+
+.paper img {
+  width: 3.5rem;
 }
