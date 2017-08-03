@@ -17,7 +17,7 @@ div {
 
 /*Header*/
 .header {
-  background-image: url(/Users/thomasbishop/Documents/Projects/TortoiseshellOptics/resources/images/glasses-bg.png);
+  background-image: url(../images/glasses-bg.png);
   height: 30rem;
   background-repeat: no-repeat;
   background-size: cover;
@@ -55,6 +55,10 @@ ul span{
   color: white;
 }
 
+.mob {
+  display: none;
+}
+
 .banner {
   display: flex;
   justify-content: flex-end;
@@ -80,15 +84,21 @@ ul span{
     margin: auto;
   }
 
+  .content {
+    max-width: 100%;
+    margin: auto;
+  }
+
   .header {
     padding-top: 0rem;
-    height: 22rem;
+    height: 18rem;
   }
 
   .navigation {
     position: fixed;
     width: 100%;
     height: 4rem;
+    margin-left: 0rem;
   }
 
   .banner {
@@ -102,7 +112,46 @@ ul span{
   }
 }
 
+@media only screen and (max-width: 665px) {
+  .desktab {
+    display: none;
+  }
 
+  .logo span {
+    display: none;
+  }
+
+  .navigation {
+    height: 2.5rem;
+  }
+
+  .mob {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 0rem;
+    color: white;
+    font-size: 1rem;
+    font-family: Helvetica;
+    display: block;
+  }
+}
+@media only screen and (max-width: 480px) {
+
+  .header {
+    background-position: 20%;
+    height: 14.5rem;
+  }
+
+  .bannertxt {
+    width: 100%;
+    justify-content: center;
+    margin: 10rem auto 0 2rem;;
+    padding: 0 1rem;
+    font-size: 1rem;
+    height: 2rem;
+  }
+}
 /*icons*/
 .icons {
   display: flex;
@@ -129,6 +178,19 @@ ul span{
   width: 3.5rem;
 }
 
+@media only screen and (max-width: 480px) {
+
+  .icons {
+    flex-direction: column;
+    align-items: center;
+    margin: 3.77rem;
+  }
+
+  .icon {
+    font-size: 1rem;
+    margin: 1.54rem 0;
+  }
+}
 /*Store Information*/
 .storeinfo {
   display: flex;
@@ -161,6 +223,27 @@ ul span{
   padding-top: 1rem;
 }
 
+@media only screen and (max-width: 480px) {
+  .storeinfo {
+    flex-direction: column;
+  }
+
+  .info {
+    width: 100%;
+    font-size: 0.77rem;
+    margin-top: 0rem;
+    margin-bottom: 4rem;
+  }
+
+  .heading {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .info p {
+    padding-left: 0.5rem;
+  }
+}
 /*Footer*/
 .footerinfo {
   max-width: 960px;
@@ -177,4 +260,20 @@ footer {
 footer img {
   height: 1.5rem;
   padding-right: 1rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .footerinfo {
+    max-width: 100%;
+    margin: auto;
+  }
+  footer span {
+    display: none;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    padding: 4rem; 0 4rem 0;
+  }
 }
